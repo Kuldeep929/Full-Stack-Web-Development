@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Kalam', cursive;
+  color: #66BFBF;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: #EAF6F6;
+}
+
+hr {
+  border-style: dotted none none none;
+  border-width: 6px;
+  width: 7%;
+  color: #EAF6F6;
+  margin: 100px auto;
+}
+
+p {
+  color: #40514E;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.Programmer {
+  margin-top: 0;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+
+.top {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 150px;
+}
+
+.profile {
+  margin: 100px auto 0 auto;
+  width: 30%;
+}
+
+.bottomcloud {
+  position: absolute;
+  left: 210px;
+  bottom: 300px;
+}
+
+.topcloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+  ;
+}
+
+.web-dev {
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+}
+
+.cpp {
+  width: 20%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-me {
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.contact-desc{
+  width: 30%;
+  margin: 40px auto;
+}
+
+.btn {
+  background-color: #11999E;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5%;
+  margin: 20px auto 0 auto;
+  ;
+}
+
+.bottom-container {
+  padding: 50px 0 8px 0;
+  background-color: #66BFBF;
+  color: #11999E;
+  font-weight: bold;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
