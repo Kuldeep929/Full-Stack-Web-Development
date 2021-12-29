@@ -28,7 +28,5 @@
 * Mongoose
 * Authentication
 * Firebase
-* React.js
-* React Hooks
 * Web Design
 * Deployment with GitHub Pages, Heroku and MongoDB Atlas
