@@ -27,15 +27,12 @@ mongoose.connect("mongodb://localhost:27017/dailyJournalDB", {
   useFindAndModify: false
 });
 
+
 const postSchema = {
   title: String,
   description: String
 };
 const Post = mongoose.model("post", postSchema);
-
-
-
-
 
 app.get("/", function(req, res) {
   Post.find({}, function(err, foundPosts) {
@@ -44,11 +41,6 @@ app.get("/", function(req, res) {
       posts: foundPosts
     });
   })
-
-
-
-
-
 });
 app.get("/about", function(req, res) {
   res.render("about", {
@@ -63,39 +55,28 @@ app.get("/contact", function(req, res) {
 app.get("/compose", function(req, res) {
   res.render("compose");
 });
+
+
 app.post("/compose", function(req, res) {
   const title = _.capitalize(req.body.postTitle);
   const content = req.body.postBody;
-
   const post = new Post({
     title: title,
     description: content
   });
+  
   post.save(function(err) {
     if (!err) {
       res.redirect("/");
     }
   });
-
-
-
 });
-
-
 app.get("/posts/:id",function(req,res){
   const id = req.params.id;
   Post.findById({_id:id},function(err,foundPost){
     res.render("post" , {title : foundPost.title , content : foundPost.description});
   });
 });
-
-
-
-
-
-
-
-
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
