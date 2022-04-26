@@ -198,5 +198,5 @@ req.login(user,function(err){
 
 
 app.listen("5500",function(){
-  console.log("server started at port 3000");
+  console.log("server started at port 5500");
 })
