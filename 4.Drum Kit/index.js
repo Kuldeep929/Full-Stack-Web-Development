@@ -1,15 +1,15 @@
-for(var i =0;i<document.querySelectorAll(".drum").length;i++)
+for(var i =0;i<document.querySelectorAll(".drum").length;i++) // all the elements of CSS class(.) selector i.e., drum  
 {
-  document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+  document.querySelectorAll(".drum")[i].addEventListener("click", function(){  // add click event listener to (.drum class)
       makeSound(this.innerHTML);
       addAnimation(this.innerHTML)
   })
 }
-document.addEventListener("keydown",function(event){
+document.addEventListener("keydown",function(event){ // add key press event listener
   makeSound(event.key);
   addAnimation(event.key)
 })
-function makeSound(key){
+function makeSound(key){ // to play appropiate sound
   switch (key) {
     case "w":  var tom1 = new Audio('sounds/tom-1.mp3');
                tom1.play();
@@ -36,9 +36,9 @@ function makeSound(key){
 
   }
 }
-function addAnimation(className){
-  document.querySelector("."+className).classList.add("pressed");
-  setTimeout(function(){
-  document.querySelector("."+className).classList.remove("pressed");
+function addAnimation(className){ 
+  document.querySelector("."+className).classList.add("pressed"); // add one more class (.pressed)
+  setTimeout(function(){ // call the function after specified milisecond
+  document.querySelector("."+className).classList.remove("pressed"); // remove (.pressed)
 },100)
 }
